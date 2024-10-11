@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html data-theme="light" lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.3/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- font Awesome CDN link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style/style.css">
+
+  <!-- JQuery CDN link -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+  <title>Module</title>
+</head>
+
+<body>
+    <!-- Navigation start -->
+	<nav>
+		<img src="img/logo-01.png" class="logo" alt="">
+
+		<div class="navigation">
+			<ul>
+				<i id="menu-close" class="fas fa-times"></i>
+				<li><a href="index.html" class="active">Home</a></li>
+				<li><a href="newsevent.html">News & Event</a></li>
+				<li><a href="">Our Team</a></li>
+				<li><a href="about.html">About Us</a></li>
+				<li><a href="">Contact</a></li>
+			</ul>
+
+			<img src="img/menu.png" id="menu-btn" alt="">
+		</div>
+	</nav>
+	<!-- Navigation ends -->
+  <header class="header-tag w-5/6 mx-auto mt-6">
+    <div class="navbar bg-base-100 px-8  flex justify-start">
+    </div>
+    <div class="navbar-center hidden lg:flex mb-5 border-2 rounded-xl ">
+      <ul class="menu menu-horizontal px-1 items-start font-semibold text-base">
+        <li><a href="#">Problem</a></li>
+        <li><a>Submission</a></li>
+        <li><a>Contest Kist</a></li>
+        <li><a>Rating</a></li>
+      </ul>
+    </div>
+
+    </div>
+  </header>
+  <main class="header-tag w-5/6 mx-auto">
+    <div class="problem w-full flex gap-5">
+      <div class="overflow-x-auto w-3/4 rounded-2xl shadow-lg">
+        <table id="table" class="w-full shadow-md rounded-2xl">
+          <!-- head -->
+          <thead>
+            <tr class="text-black font-medium text-lg bg-slate-200 gap-18">
+              <th>ID</th>
+              <th>Name</th>
+              <th>Solved</th>
+              <th>Tags</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+
+      <div class="side-pnel shadow-lg rounded-2xl bg-cyan-50">
+        <div class="tag-search px-4 w-11/12 mx-auto">
+          <h1 class="text-center font-semibold mb-5 mt-16 text-lg">Search Problem By Tag</h1>
+
+          <form class="flex items-center max-w-sm mx-auto">
+            <label for="simple-search" class="sr-only">Search</label>
+            <div class="relative w-full ">
+              <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+
+              </div>
+              <input type="text" id="simple-search"
+                class="border  border-gray-300 text-gray-900 text-sm rounded-3xl focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5 bg-slate-50 dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                placeholder="Search tag name..." required />
+            </div>
+            <button id="tag-search" type="submit"
+              class="p-2.5 ms-2 text-sm font-medium text-black bg-black rounded-3xl border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700">
+              <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 20 20">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+              </svg>
+              <span class="sr-only">Search</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="button-nav mt-6 text-center">
+      <button id="prevBtn" class="btn">Previous</button>
+      <button id="nextBtn" class="btn">Next</button>
+    </div>
+  </main>
+  <!-- Footer section starts from here -->
+	<footer>
+		<div class="footer-col">
+			<h3>Top Products</h3>
+			<li>Manage Reputation</li>
+			<li>Power Tools</li>
+			<li>Managed Website</li>
+			<li>Marketing Service</li>
+		</div>
+
+		<div class="footer-col">
+			<h3>Power Tools</h3>
+			<li>Jobs</li>
+			<li>Marketing Service</li>
+			<li>Top Products</li>
+			<li>Manage Reputation</li>
+		</div>
+
+		<div class="footer-col">
+			<h3>Power Tools</h3>
+			<li>Managed Website</li>
+			<li>Manage Reputation</li>
+			<li>Top Products</li>
+			<li>Marketing Service</li>
+		</div>
+
+		<div class="footer-col">
+			<h3>Guides</h3>
+			<li>Research</li>
+			<li>Experts</li>
+			<li>Managed Website</li>
+			<li>Marketing Service</li>
+		</div>
+
+		<div class="footer-col">
+			<h3>Newsletter</h3>
+			<p>You can trust us. we only send promo offers.</p>
+
+			<div class="subscribe">
+				<input type="email" placeholder="Your email Address">
+				<a href="#" class="yellow">SUBSCRIBE</a>
+			</div>
+		</div>
+
+		<div class="copyright">
+			<p>
+				Copyright @ 2024 All rights reserved | North Western University, Khulna
+			</p>
+			<div class="pro-links">
+				<i class="fab fa-facebook"></i>
+				<i class="fab fa-instagram"></i>
+				<i class="fab fa-linkedin-in"></i>
+				<i class="fab fa-github"></i>
+				<i class="fab fa-twitter"></i>
+			</div>
+		</div>
+	</footer>
+	<!-- Footer section ends from here -->
+
+  <script src="app.js"></script>
+</body>
+
+</html>
